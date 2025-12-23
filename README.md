@@ -57,10 +57,31 @@ Tested on:
 
 ## ▶️ Usage (Local)
 
+Clone the repository:
+
+```bash
 git clone https://github.com/hackhawk-arch/server-stats.git
+````
+
+Or click the link to open it in your browser: [Server Stats Repository](https://github.com/hackhawk-arch/server-stats)
+
+Navigate into the project directory:
+
+```bash
 cd server-stats
+```
+
+Make the script executable:
+
+```bash
 chmod +x server-stats.sh
+```
+
+Run the script:
+
+```bash
 ./server-stats.sh
+```
 
 ---
 
@@ -151,6 +172,7 @@ This project demonstrates:
 * [ ] Publish image to Docker Hub
 
 ---
+
 
 
 
