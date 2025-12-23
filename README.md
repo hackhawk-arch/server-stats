@@ -58,11 +58,9 @@ Tested on:
 ## ▶️ Usage (Local)
 
 git clone https://github.com/hackhawk-arch/server-stats.git
-```
 cd server-stats
 chmod +x server-stats.sh
 ./server-stats.sh
-```
 
 ---
 
@@ -153,5 +151,6 @@ This project demonstrates:
 * [ ] Publish image to Docker Hub
 
 ---
+
 
 
