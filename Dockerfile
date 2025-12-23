@@ -1,7 +1,7 @@
 FROM alpine:3.20
 
-LABEL maintainer=" Kelvin Macharia"
-LABEL description="Lightweight linux server health monitoring script"
+LABEL maintainer="Kelvin Macharia"
+LABEL description="Lightweight Linux server health monitoring script"
 
 # Install required tools
 RUN apk add --no-cache \
@@ -13,7 +13,8 @@ RUN apk add --no-cache \
 
 WORKDIR /server-stats
 
-COPY server-stats.sh /server-stats/server-stats.sh
-RUN chmod +x /server-stats/server-stats.sh
+COPY server-stats.sh .
+RUN chmod +x server-stats.sh
 
-ENTRYPOINT [ "/server-stats/server-stats.sh" ]
+# Force Bash (Alpine default shell is ash)
+ENTRYPOINT ["bash", "/server-stats/server-stats.sh"]

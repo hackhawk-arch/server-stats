@@ -11,7 +11,7 @@ section() {
 }
 
 # OS & Uptime info
-if [[ -f /etc/os-release]]: then
+if [ -f /etc/os-release ]; then
     . /etc/os-release
     echo "Distribution: $PRETTY_NAME"
 else
