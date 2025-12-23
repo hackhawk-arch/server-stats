@@ -49,6 +49,7 @@ git clone https://github.com/hackhawk-arch/server-stats.git
 cd server-stats
 chmod +x server-stats.sh
 ./server-stats.sh
+```
 
 ## Docker Usage (Recommended)
 
@@ -65,8 +66,8 @@ docker run --rm \
   -v /proc:/proc:ro \
   -v /sys:/sys:ro \
   server-stats
+```
 Note: Access to host system metrics requires elevated permissions.
-
 
 ---
 
@@ -74,7 +75,9 @@ Note: Access to host system metrics requires elevated permissions.
 
 ```md
 ## Windows (WSL2) Notes
+```
 
 When running on Windows 11 with WSL2 and Docker Desktop, the script
 reports metrics for the Linux environment (WSL VM), not the Windows host.
+
 
