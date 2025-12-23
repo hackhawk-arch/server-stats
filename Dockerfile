@@ -4,7 +4,7 @@ LABEL maintainer=" Kelvin Macharia"
 LABEL description="Lightweight linux server health monitoring script"
 
 # Install required tools
-RUN apk add --n0-cache \
+RUN apk add --no-cache \
     bash \
     coreutils \
     procps \
