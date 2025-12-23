@@ -33,7 +33,7 @@ server-stats/
 ├── .gitignore
 ├── README.md
 └── LICENSE
-
+```
 ## Supported Systems
 
 Tested on:
@@ -77,3 +77,4 @@ Note: Access to host system metrics requires elevated permissions.
 
 When running on Windows 11 with WSL2 and Docker Desktop, the script
 reports metrics for the Linux environment (WSL VM), not the Windows host.
+
