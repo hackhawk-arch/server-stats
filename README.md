@@ -59,13 +59,23 @@ host system metrics.
 ### Build image
 
 ```bash
-docker build -t server-stats .
+$ docker build -t server-stats .
 
-docker run --rm \
+$ docker run --rm \
   --pid=host \
   -v /proc:/proc:ro \
   -v /sys:/sys:ro \
   server-stats
+```
+## WSL2 Limitation Notice
+
+When running Docker on Windows 11 using WSL2, mounting `/proc` or `/sys`
+from the host into the container is not supported.
+
+For WSL2 environments, run the container using:
+
+```bash
+docker run --rm --pid=host server-stats
 ```
 Note: Access to host system metrics requires elevated permissions.
 
@@ -81,6 +91,7 @@ Refer to the following documentation if you encounter issues:
 
 When running on Windows 11 with WSL2 and Docker Desktop, the script
 reports metrics for the Linux environment (WSL VM), not the Windows host.
+
 
 
 
