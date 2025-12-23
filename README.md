@@ -73,11 +73,15 @@ Note: Access to host system metrics requires elevated permissions.
 
 ## 8. WSL2 + Docker Desktop notes (important for reviewers)
 
-```md
-## Windows (WSL2) Notes
-```
+This project is tested using Docker Desktop with WSL2 integration.  
+Refer to the following documentation if you encounter issues:
+
+- [Install WSL on Windows](https://learn.microsoft.com/windows/wsl/install)
+- [Docker Desktop WSL2 backend](https://docs.docker.com/desktop/wsl/)
 
 When running on Windows 11 with WSL2 and Docker Desktop, the script
 reports metrics for the Linux environment (WSL VM), not the Windows host.
+
+
 
 
