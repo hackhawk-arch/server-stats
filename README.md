@@ -4,6 +4,7 @@
 A lightweight, Docker-based Bash script that provides a quick health snapshot
 of a Linux system. Built as a DevOps learning project and designed for
 observability, monitoring, and infrastructure diagnostics.
+More about this project roadmap can be found here: [Roadmap.sh Project Page](https://roadmap.sh/projects/server-stats)
 
 ---
 
@@ -172,6 +173,7 @@ This project demonstrates:
 * [ ] Publish image to Docker Hub
 
 ---
+
 
 
 
