@@ -1,5 +1,4 @@
 
-````md
 # Server Stats – Dockerized Linux Health Monitor
 
 A lightweight, Docker-based Bash script that provides a quick health snapshot
@@ -154,3 +153,4 @@ This project demonstrates:
 * [ ] Publish image to Docker Hub
 
 ---
+
